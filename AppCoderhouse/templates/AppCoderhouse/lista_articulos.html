@@ -1,0 +1,14 @@
+{% extends 'AppCoderhouse/herencia.html' %}
+{% load static %}
+{% block contenido_que_cambia_2 %}
+    
+    <ul>
+        <h1 style = "color: #1ed77a";>Catalogo de prendas disponibles</h1> 
+        {% for articulo in Catalogo %}
+       
+        <li>{{ articulo.tipo_articulo }} - {{ articulo.stock }}</li>
+
+        {% endfor %}
+
+    </ul>
+{% endblock contenido_que_cambia_2 %}

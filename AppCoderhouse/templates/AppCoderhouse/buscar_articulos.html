@@ -1,0 +1,11 @@
+{% extends 'AppCoderhouse/herencia.html' %}
+{% load static %}
+{% block contenido_que_cambia_2 %}
+    <form action="{% url 'Buscar' %}" method="GET">
+        <p> Prenda: <input type = "text" name="tipo_articulo">
+
+        <input type = "submit" value="Verificar">
+    
+    </form>
+    
+{% endblock contenido_que_cambia_2 %}

@@ -1,0 +1,22 @@
+
+{% extends 'AppCoderhouse/herencia.html' %}
+{% load static %}
+{% block contenido_que_cambia_2 %}
+    
+    {% include 'AppCoderhouse/verficacion_trabajadores.html' %}  
+ 
+    
+    <ul>
+        {% for empleados in registro %}
+
+
+        <li>{{ empleados.nombre}} - {{ empleados.apellido }} - {{ empleados.edad }} - {{ empleados.email }}</li>
+        {% endfor %}
+
+
+    </ul>
+ 
+
+{% endblock %}
+
+        

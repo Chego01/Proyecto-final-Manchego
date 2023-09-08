@@ -1,0 +1,22 @@
+{% extends 'AppCoderhouse/herencia.html' %}
+{% load static %}
+    
+{% block contenido_que_cambia_2 %}
+
+<h1 style = "color: #1ed77a";>Nuestros clientes más frecuentes del mes</h1> 
+ 
+
+        {% if listado %}
+    
+        <ul>
+            {% for clientes in listado %}
+       
+        
+            <li>{{ clientes.nombre}} - {{ clientes.apellido }} - {{ clientes.email }}</li>
+            {% endfor %}
+     
+    
+        </ul>
+        {% endif %}
+{% endblock contenido_que_cambia_2%}
+        
