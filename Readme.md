@@ -1,4 +1,6 @@
 Proyecto final del curso de Python
+Realizado por Kevin Manchego Villegas
+Link del video Youtube: https://youtu.be/U9mNHoAUT9k
 Sitio web de una tienda de tecnología:
 
 En este sitio web, denominado "Achorao", se enfoca en una tienda de tecnología donde se presentan productos nuevos y usados para los usuarios. Los clientes tienen la posibilidad de publicar sus artículos para venderlos a otros usuarios, lo que les otorga la facultad de agregar y editar artículos desde sus perfiles creados en el sitio web.
