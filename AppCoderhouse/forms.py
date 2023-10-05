@@ -1,17 +1,15 @@
 from django import forms
- 
+from .models import Profile
+
+
 class articuloformulario(forms.Form):
     tipo_articulo = forms.CharField()
     stock = forms.IntegerField()
+    criterio_nombre = forms.CharField(max_length=100)
 
-class clienteformulario(forms.Form):
-    nombre = forms.CharField()
-    apellido = forms.CharField()
-    email = forms.EmailField()
-
-class empleadoformulario(forms.Form):
-    nombre = forms.CharField()
-    apellido = forms.CharField()
-    edad = forms.IntegerField()
-    email = forms.CharField()
-   
+class ProfileForm(forms.ModelForm):
+    imagen = forms.ImageField(widget=forms.FileInput, required=False)
+    
+    class Meta:
+        model = Profile
+        fields = ['imagen', 'info']

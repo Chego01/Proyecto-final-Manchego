@@ -1,0 +1,85 @@
+{% extends 'AppCoderhouse/Achorao/herencia.html' %}
+
+{% block main %}
+
+<main>
+     <!-- Header-->
+     <header class="bg-dark py-5">
+        <div class="container px-5">
+            <div class="row gx-5 justify-content-center">
+                <div class="col-lg-6">
+                    <div class="text-center my-5">
+                        <h1 class="display-5 fw-bolder text-white mb-2">Bienvenido a Achorao</h1>
+                        <p class="lead text-white-50 mb-4">¿Listo para vivir una nueva experiencia?</p>                           
+                        <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
+                            <a class="btn btn-primary btn-lg px-4 me-sm-3" href="{% url 'product-list'%}">Ver Productos</a>
+                            <a class="btn btn-outline-light btn-lg px-4" href="{% url 'product-create'%}">Agregar Productos</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+
+    <!-- Features section-->
+    <section class="py-5 border-bottom" id="features">
+        <div class="container px-5 my-5">
+            <div class="row gx-5">
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-collection"></i></div>
+                    <h2 class="h4 fw-bolder">Variedad de Productos</h2>
+                    <p>En Achorao contamos con una gran variedad de productos de cualquier gama.</p>
+                </div>
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-building"></i></div>
+                    <h2 class="h4 fw-bolder">Productos nuevos o usados</h2>
+                    <p>Tenemos articulos de primera y segunda mano a la comodidad de cada persona</p>
+                </div>
+                <div class="col-lg-4">
+                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-toggles2"></i></div>
+                    <h2 class="h4 fw-bolder">Personaliza tus productos.</h2>
+                    <p>En Achorao podrás agregar y actualizar todos tus productos.</p>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Testimonials section-->
+    <section class="py-5 border-bottom">
+        <div class="container px-5 my-5 px-5">
+            <div class="text-center mb-5">
+                <h2 class="fw-bolder">Opiniones de nuestros clientes</h2>
+            </div>
+            <div class="row gx-5 justify-content-center">
+                <div class="col-lg-6">
+                    <!-- Testimonial 1-->
+                    <div class="card mb-4">
+                        <div class="card-body p-4">
+                            <div class="d-flex">
+                                <div class="flex-shrink-0"><i class="bi bi-chat-right-quote-fill text-primary fs-1"></i></div>
+                                <div class="ms-4">
+                                    <p class="mb-1">Los productos son de otro nivel</p>
+                                    <div class="small text-muted">- David Llamosas</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 2-->
+                    <div class="card">
+                        <div class="card-body p-4">
+                            <div class="d-flex">
+                                <div class="flex-shrink-0"><i class="bi bi-chat-right-quote-fill text-primary fs-1"></i></div>
+                                <div class="ms-4">
+                                    <p class="mb-1">Muy dinámico a la hora de interactuar</p>
+                                    <div class="small text-muted">- Mabel Alvarez</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+{% endblock %}

@@ -2,6 +2,6 @@ from django.contrib import admin
 from .models import *
 # Register your models here.
 
-admin.site.register(Articulo)
-admin.site.register(Cliente)
-admin.site.register(Empleado)
+admin.site.register(Product)
+admin.site.register(Profile)
+admin.site.register(Mensaje)
